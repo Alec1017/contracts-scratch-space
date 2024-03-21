@@ -6,7 +6,15 @@ libs = ["lib"]
 
 evm_version = "paris"
 
+remappings = [
+	"@openzeppelin/contracts/=lib/openzeppelin-contracts/contracts/",
+	"ds-test/=lib/openzeppelin-contracts/lib/forge-std/lib/ds-test/src/",
+	"erc4626-tests/=lib/openzeppelin-contracts/lib/erc4626-tests/",
+	"forge-std/=lib/forge-std/src/",
+	"openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/"
+]
+
 [rpc_endpoints]
-polygon = "https://polygon-mumbai.g.alchemy.com/v2/${API_KEY_RPC_POLYGON}"
+polygon = "https://polygon-mainnet.g.alchemy.com/v2/${API_KEY_RPC_POLYGON}"
 mumbai = "https://polygon-mumbai.g.alchemy.com/v2/${API_KEY_RPC_MUMBAI}"
 sepolia = "https://eth-sepolia.g.alchemy.com/v2/${API_KEY_RPC_SEPOLIA}"
